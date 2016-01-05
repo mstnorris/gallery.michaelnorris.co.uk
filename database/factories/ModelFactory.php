@@ -19,3 +19,9 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
         'remember_token' => str_random(10),
     ];
 });
+
+$factory->define(App\Photo::class, function (Faker\Generator $faker) {
+    return [
+        'path' => '1.jpeg'
+    ];
+});
